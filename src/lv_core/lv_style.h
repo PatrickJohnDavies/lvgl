@@ -287,7 +287,7 @@ void _lv_style_list_reset(lv_style_list_t * style_list);
 static inline lv_style_t * lv_style_list_get_style(lv_style_list_t * list, uint8_t id)
 {
     if(list->has_trans && list->skip_trans) id++;
-    if(list->style_cnt == 0 || id >= list->style_cnt) return NULL;
+    if(list->style_cnt == 0 || id >= list->style_cnt) return 0;
     return list->style_list[id];
 }
 

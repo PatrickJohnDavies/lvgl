@@ -55,7 +55,7 @@ static inline void lv_task_once(lv_task_t * task)
 static inline void lv_dropdown_set_draw_arrow(lv_obj_t * ddlist, bool en)
 {
     if(en) lv_dropdown_set_symbol(ddlist, LV_SYMBOL_DOWN);
-    else lv_dropdown_set_symbol(ddlist, NULL);
+    else lv_dropdown_set_symbol(ddlist, 0);
 }
 
 static inline bool lv_dropdown_get_draw_arrow(lv_obj_t * ddlist)
